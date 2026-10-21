@@ -1,9 +1,8 @@
 ﻿string[] inventory = { "Health Potion", "Sword", "Shield", "Bread", "Key" };
 
-Console.WriteLine(inventory[0]); //  Health Potion
-Console.WriteLine(inventory[1]); //  Sword
-Console.WriteLine(inventory[2]); //  Shield
-Console.WriteLine(inventory[3]); //  Bread
-Console.WriteLine(inventory[4]); //  Key
+for (int i = 0; i < inventory.Length; i++)
+{
+    Console.WriteLine($"Slot {i + 1}: {inventory[i]}");
+}
 
 Console.WriteLine($"\nTotal items: {inventory.Length}");
